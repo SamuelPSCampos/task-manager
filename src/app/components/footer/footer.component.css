@@ -1,0 +1,19 @@
+.footer {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  background: #383F51;
+  padding: 14px 16px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.text {
+  color: white;
+}

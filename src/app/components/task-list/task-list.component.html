@@ -1,0 +1,15 @@
+<div class="list">
+  <ng-container *ngIf="tasks.length > 0; else empty">
+    <app-task-item
+      *ngFor="let task of tasks"
+      [task]="task"
+      (toggle)="toggle.emit($event)"
+      (remove)="remove.emit($event)"
+      (edit)="edit.emit($event)"
+    />
+  </ng-container>
+
+  <ng-template #empty>
+    <p class="empty">Nenhuma tarefa cadastrada ainda.</p>
+  </ng-template>
+</div>

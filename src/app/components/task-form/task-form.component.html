@@ -1,0 +1,26 @@
+<form class="form" [formGroup]="form" (ngSubmit)="submit()">
+  <div class="row">
+    <input
+      type="text"
+      placeholder="Nome da tarefa..."
+      formControlName="title"
+      maxlength="300"
+    />
+
+    <input type="date" formControlName="dueDate" />
+
+    <button class="btn primary" type="submit">
+      {{ taskToEdit ? "Salvar" : "Adicionar" }}
+    </button>
+
+    <button *ngIf="taskToEdit" class="btn" type="button" (click)="cancelEdit()">
+      Cancelar
+    </button>
+  </div>
+
+  <div class="error-slot">
+    <p class="error" *ngIf="submitted && form.invalid">
+      É necessário colocar o nome e a data da tarefa.
+    </p>
+  </div>
+</form>

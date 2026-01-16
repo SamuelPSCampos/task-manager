@@ -1,0 +1,89 @@
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.left {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-weight: 600;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  opacity: 0.75;
+  flex-wrap: wrap;
+}
+
+.status {
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.btn {
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(0.97);
+}
+
+.btn.danger {
+  border-color: #ffb3b3;
+  background: #ffe7e7;
+}
+
+.task.done .title {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task.done {
+  background: #f3fff3;
+  border-color: #bde5bd;
+}
+
+.calendar {
+  width: 15px;
+  height: auto;
+  display: block;
+  flex: 0 0 auto;
+}

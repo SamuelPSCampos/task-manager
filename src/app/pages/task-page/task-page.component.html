@@ -1,0 +1,20 @@
+<section class="page">
+  <app-task-form
+    [taskToEdit]="editingTask()"
+    (saved)="onSaved()"
+    (canceled)="onCanceled()"
+  ></app-task-form>
+
+  <app-task-counters
+    [total]="total()"
+    [pending]="pendingCount()"
+    [done]="doneCount()"
+  ></app-task-counters>
+
+  <app-task-list
+    [tasks]="tasks()"
+    (toggle)="onToggle($event)"
+    (remove)="onRemove($event)"
+    (edit)="onEdit($event)"
+  ></app-task-list>
+</section>

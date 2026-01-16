@@ -1,0 +1,23 @@
+<div class="task" [class.done]="task.done">
+  <label class="left">
+    <input
+      type="checkbox"
+      [checked]="task.done"
+      (change)="toggle.emit(task.id)"
+    />
+
+    <div class="info">
+      <div class="title">{{ task.title }}</div>
+      <div class="meta">
+        <img src="calendar.png" alt="Calendário" class="calendar">
+        <span class="date">{{ formatDateBR(task.dueDate) }}</span>
+        <span class="status">{{ task.done ? "Concluída" : "Pendente" }}</span>
+      </div>
+    </div>
+  </label>
+
+  <div class="actions">
+    <button class="btn" (click)="edit.emit(task)">Editar</button>
+    <button class="btn danger" (click)="remove.emit(task.id)">Excluir</button>
+  </div>
+</div>

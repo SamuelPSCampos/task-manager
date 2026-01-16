@@ -1,0 +1,22 @@
+.header {
+  background: #4C8577;
+  border-bottom: 1px solid #ddd;
+  padding: 14px 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 50px;
+}
+
+.title {
+  font-weight: 500;
+  color: white;
+}

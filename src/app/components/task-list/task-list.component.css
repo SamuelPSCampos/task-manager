@@ -1,0 +1,9 @@
+.list {
+  height: 450px;
+  overflow-y: auto;
+}
+
+.empty {
+  padding: 10px;
+  opacity: 0.7;
+}
