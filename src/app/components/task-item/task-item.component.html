@@ -9,7 +9,7 @@
     <div class="info">
       <div class="title">{{ task.title }}</div>
       <div class="meta">
-        <img src="calendar.png" alt="Calendário" class="calendar">
+        <img src="calendar.png" alt="Calendário" class="calendar" />
         <span class="date">{{ formatDateBR(task.dueDate) }}</span>
         <span class="status">{{ task.done ? "Concluída" : "Pendente" }}</span>
       </div>
@@ -17,7 +17,12 @@
   </label>
 
   <div class="actions">
-    <button class="btn" (click)="edit.emit(task)">Editar</button>
-    <button class="btn danger" (click)="remove.emit(task.id)">Excluir</button>
+    <button class="btn" type="button" (click)="edit.emit(task)">
+      <img src="edit-file.png" alt="Editar" class="icon" />
+    </button>
+
+    <button class="btn danger" type="button" (click)="remove.emit(task.id)">
+      <img src="recycle-bin.png" alt="Excluir" class="icon" />
+    </button>
   </div>
 </div>

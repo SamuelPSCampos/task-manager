@@ -58,8 +58,13 @@
   border: 1px solid #ccc;
   background: #f7f7f7;
   border-radius: 8px;
-  padding: 6px 10px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn:hover {
@@ -86,4 +91,10 @@
   height: auto;
   display: block;
   flex: 0 0 auto;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  display: block;
 }

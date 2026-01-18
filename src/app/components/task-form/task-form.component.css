@@ -17,7 +17,7 @@ input[type="date"] {
   border: 1px solid #ccc;
   flex: 1;
   min-width: 200px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .btn {
@@ -32,6 +32,9 @@ input[type="date"] {
 .btn.primary {
   border-color: #b7d5ff;
   background: #e8f1ff;
+  font-size: 15px;
+  opacity: 0.8;
+  font-weight: 600;
 }
 
 .error-slot {
